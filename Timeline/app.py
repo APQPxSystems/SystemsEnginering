@@ -249,7 +249,14 @@ def main():
 
     # User role -- viewer
     elif user_role == 'Viewer' and user_pass == 'SEviewer':
-        st.subheader('View Timeline Data')
+
+        request_form = open('pepdca\ME3-SE App Request Form.pdf', 'rb')
+        st.download_button(
+            'Download Systems Engineering Request Form',
+            request_form, file_name='SE Request Form.pdf', mime='pdf'
+        )
+      
+        st.subheader('Systems Engineering Activities')
         df = display_data_as_df()
         st.write(df)
         st.write('________________________________________________')

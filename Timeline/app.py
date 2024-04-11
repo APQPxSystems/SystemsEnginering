@@ -6,7 +6,7 @@ import altair as alt
 from io import StringIO
 
 # App Configurations
-st.set_page_config(page_title='PE PDCA', layout='wide')
+st.set_page_config(page_title='SE Activities', layout='wide')
 hide_st_style = """
                 <style>
                 #MainMenu {visibility:hidden;}
